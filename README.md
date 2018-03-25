@@ -1,5 +1,5 @@
 # README #
-This repository is for testing the three ICP variants for the hauv-slam project.
+This repository is for testing the three ICP variants for the hauv-slam project, as well as subsequent detection of degenerate transformations by calculating eigen values of the ATA matrix from the nonlinear optimization of the ICP solution. This is used to check for bad loop-closures and improve them by using odometry information for degenerate directions and thus creating a "partial" factor in the factor graph SLAM framework (solved using iSAM).
 
 ### What is this repository for? 
 
